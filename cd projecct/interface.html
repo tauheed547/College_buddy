@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Page</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+body::before{
+    content: ""; 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-image: url('https://wallpaperaccess.com/full/1533500.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    filter: blur(1px) brightness(0.5); /* Apply blur and brightness filter */ 
+    z-index: -1;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.card{
+    width: 280px;
+    height: 400px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items:flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+.card:hover{
+    transform: translateY(20px);
+}
+.card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5),rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover:before{
+    opacity: 1;
+}
+.card img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card .info{
+    position: relative;
+    z-index: 3;
+    color:0;
+    opacity:0;
+    transform:translateY(30px);
+    transition: 0.5s all;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.card:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.card .info h1{
+    margin: 0;
+    text-align: center;
+}
+.card .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card .info .btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    align-items: center;
+    margin-left: 70px;
+    margin:0 auto;
+    display: inline-block;
+}
+.card .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+.footer {
+    position: fixed; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: transparent; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 14px; 
+    font-family: Arial, sans-serif; 
+    z-index: 1000; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 8px 8px 0 0; 
+    width: auto; 
+    text-align: center; 
+}
+.page-header {
+    position: absolute; /* Fix the heading at a specific position */
+    top: 5px; /* Adjusts the vertical spacing */
+    left: 50%; /* Centers the heading horizontally */
+    transform: translateX(-50%); /* Ensures perfect centering */
+    text-align: center; /* Aligns text in the center */
+    color: #5d5959; /* Makes the text white */
+    font-size: 24px; /* Sets a larger font size */
+    font-weight: bold; /* Makes the text bold */
+    z-index: 100; /* Ensures it stays above other elements */
+}
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <h2>Our assistant, your choice – Select the one that fits your vibe!</h2>
+    </div>
+    <div class="wrapper">
+        <div class="card">
+            <img src="https://cdn.prod.website-files.com/5e305a6cb7083222527a89cc/66e414c27b4818a196ff0c1d_how_to_make_an_ai_voice_assistant_10_steps.webp">
+            <div class="info">
+                <h1>Tara</h1>
+                <p>Your friendly voice assistant, making every task simpler and faster!</p>
+                <a href="tara.html" class="btn">Voice assistant</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://kriyatec.com/wp-content/uploads/2020/05/chatbot2.jpeg">
+            <div class="info">
+                <h1>Campus Mitra</h1>
+                <p>Your all-in-one college assistant, here to make every campus moment effortless!</p>
+                <a href="CollegeMantra.html" class="btn">Chat Bot</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; Campus Buddy | All Rights Reserved</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Campus Buddy</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 28px;
+            color: #2C3E50;
+            margin-bottom: 20px;
+        }
+        .contact-info, .contact-form {
+            margin-bottom: 40px;
+        }
+        .contact-info p, .contact-form p {
+            font-size: 18px;
+            color: #34495E;
+        }
+        .contact-info a {
+            color: #2980B9;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #BDC3C7;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #2980B9;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #1A66A1;
+        }
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        footer a {
+            color: #ECF0F1;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 28px;
+            }
+            .section-title {
+                font-size: 24px;
+            }
+            .contact-form input, .contact-form textarea {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>We’re here to assist you. Reach out to us anytime!</p>
+    </header>
+
+    <div class="container">
+        <div class="contact-info">
+            <h2 class="section-title">Our Contact Information</h2>
+            <p>If you need assistance or have any questions, feel free to contact us. We are always happy to help!</p>
+            <p><strong>Email:</strong> <a href="mailto:collegeproject3457@gmail.com">collegeproject3457@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+91 8328051484">+91 8328051484</a></p>
+            <p><strong>Address:</strong> Srinivasa Ramanujan Institute of Technology, Rotarypuram, Anantapur, AndhraPradesh, PIN-515701</p>
+        </div>
+
+        <div class="contact-form">
+            <h2 class="section-title">Send Us a Message</h2>
+            <form action="https://formspree.io/f/mjkkpeow" method="POST">
+                <p><strong>Name:</strong></p>
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <p><strong>Email:</strong></p>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <p><strong>Subject:</strong></p>
+                <input type="text" name="subject" placeholder="Enter the subject" required>
+                <p><strong>Message:</strong></p>
+                <textarea name="message" rows="6" placeholder="Write your message here" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Thank you for reaching out. We'll get back to you as soon as possible.</p>
+        <p><a href="coverpage.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>

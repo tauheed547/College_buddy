@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Bot</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-image: url('https://img.freepik.com/premium-photo/chat-gpt-artificial-intelligence-chat-bot-by-open-ai-ai-vector_941600-157.jpg'); 
+    background-size: cover; /* Ensures the image covers the entire viewport */ 
+    background-repeat: no-repeat; /* Prevents the image from repeating */ 
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Makes sure body takes full viewport height */ 
+    margin: 0; /* Removes default margin */
+    backdrop-filter: brightness(40%);
+}
+.text{
+    margin-left: 10%;
+}
+h1{
+    color: aliceblue;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 40px;
+}
+#name{
+    color: #ea4c09;
+    font-size: 70px;
+}
+#btn{
+    width: 70%;
+    background: linear-gradient(to right,#de581e,rgb(44, 158, 220));
+    margin-top: 10%;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 10px rgb(44, 158, 220),2px 2px 10px rgb(222, 30, 180);
+    border: none;
+}
+#btn:hover{
+    box-shadow: 2px 2px 20px rgb(44, 158, 220),2px 2px 20px rgb(222, 30, 180);
+    letter-spacing: 5px;
+}
+#para{
+    color: aliceblue;
+    margin-top: 5%;
+    font-size: 20px;
+}
+.menu { 
+    position: absolute; 
+    top: 20px; 
+    right: 20px; } 
+.hamburger { 
+    display: flex; 
+    flex-direction: column; 
+    cursor: pointer; 
+    width: 30px; 
+    height: 24px; 
+    justify-content: space-between; }
+.line { 
+    background-color: #fff; 
+    height: 4px; 
+    width: 100%; 
+    border-radius: 2px; 
+} 
+#menu-toggle { 
+    display: none; 
+} 
+#menu-toggle:checked + .hamburger + .dropdown { 
+    display: flex; 
+} 
+.dropdown { 
+    display: none; 
+    flex-direction: column; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 5px; 
+    position: absolute; 
+    top: 50px; 
+    right: 0;
+} 
+.dropdown ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+} 
+.dropdown ul li { 
+    padding: 10px; 
+    text-align: right; 
+} 
+.dropdown ul li a { 
+    color: white; 
+    text-decoration: none; 
+}
+#under{
+    color: black;
+}
+a#underscore {
+    text-decoration: none; /* Removes the underline */
+    color: black; /* Default text color */
+    font-size: 18px; /* Adjust the size as needed */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.footer {
+    position: fixed; /* Sticks the footer to a specific location on the screen */
+    bottom: 0; /* Aligns the footer to the bottom */
+    left: 0; /* Aligns the footer to the left */
+    width: auto; /* Adjusts width automatically */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adds spacing inside the footer */
+    font-size: 14px; /* Adjust font size */
+    font-family: Arial, sans-serif; /* Ensures readable font */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for styling */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Welcome to<br><span id="name"> SRIT College Bot </span></h1>
+            <p id="para"><b>Campus Buddy: Your AI-Powered College Genie!</b><br><br>
+                Your ultimate companion for a smarter campus life. With just a few clicks,<br>access college website, exam portals, faculty information & academic updates effortlessly.<br><br> 
+                Need answers beyond campus?<br><br> 
+                -Our voice and text assistant brings the internet to you.<br><br>
+                <b>"Simplify, Search, and Succeed"</b>
+            </p>
+            <a href="interface.html" id="underscore" id="start"><button id="btn">Let's get Started</button></a>
+        </div>
+    </div>
+    <!-- Hamburger Menu --> 
+    <div class="menu"> 
+        <input type="checkbox" id="menu-toggle"> 
+        <label for="menu-toggle" class="hamburger"> 
+            <div class="line"></div> 
+            <div class="line"></div> 
+            <div class="line"></div> 
+        </label> 
+        <div class="dropdown">
+            <ul>
+                <li><a href="contact.html">Contact<span id="under" >_</span>us</a></li> 
+                <li><a href="initialHelp.html">Help</a></li> 
+            </ul> 
+        </div>
+        <div class="footer">
+            <p>&copy; Campus Buddy | All Rights Reserved</p>
+        </div>
+    </body>
+</html>
